@@ -85,6 +85,7 @@ class Completions(SyncAPIResource):
         response_format: completion_create_params.ResponseFormat | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
         service_tier: Optional[Literal["auto", "default"]] | NotGiven = NOT_GIVEN,
+        skip_special_tokens: Optional[bool] | NotGiven = NOT_GIVEN,
         stop: Union[Optional[str], List[str]] | NotGiven = NOT_GIVEN,
         store: Optional[bool] | NotGiven = NOT_GIVEN,
         stream: Optional[Literal[False]] | NotGiven = NOT_GIVEN,
@@ -254,6 +255,8 @@ class Completions(SyncAPIResource):
               When this parameter is set, the response body will include the `service_tier`
               utilized.
 
+          skip_special_tokens: If set, special tokens will be included in the output
+
           stop: Up to 4 sequences where the API will stop generating further tokens.
 
           store: Whether or not to store the output of this chat completion request for use in
@@ -337,6 +340,7 @@ class Completions(SyncAPIResource):
         response_format: completion_create_params.ResponseFormat | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
         service_tier: Optional[Literal["auto", "default"]] | NotGiven = NOT_GIVEN,
+        skip_special_tokens: Optional[bool] | NotGiven = NOT_GIVEN,
         stop: Union[Optional[str], List[str]] | NotGiven = NOT_GIVEN,
         store: Optional[bool] | NotGiven = NOT_GIVEN,
         stream_options: Optional[ChatCompletionStreamOptionsParam] | NotGiven = NOT_GIVEN,
@@ -512,6 +516,8 @@ class Completions(SyncAPIResource):
               When this parameter is set, the response body will include the `service_tier`
               utilized.
 
+          skip_special_tokens: If set, special tokens will be included in the output
+
           stop: Up to 4 sequences where the API will stop generating further tokens.
 
           store: Whether or not to store the output of this chat completion request for use in
@@ -588,6 +594,7 @@ class Completions(SyncAPIResource):
         response_format: completion_create_params.ResponseFormat | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
         service_tier: Optional[Literal["auto", "default"]] | NotGiven = NOT_GIVEN,
+        skip_special_tokens: Optional[bool] | NotGiven = NOT_GIVEN,
         stop: Union[Optional[str], List[str]] | NotGiven = NOT_GIVEN,
         store: Optional[bool] | NotGiven = NOT_GIVEN,
         stream_options: Optional[ChatCompletionStreamOptionsParam] | NotGiven = NOT_GIVEN,
@@ -763,6 +770,8 @@ class Completions(SyncAPIResource):
               When this parameter is set, the response body will include the `service_tier`
               utilized.
 
+          skip_special_tokens: If set, special tokens will be included in the output
+
           stop: Up to 4 sequences where the API will stop generating further tokens.
 
           store: Whether or not to store the output of this chat completion request for use in
@@ -838,6 +847,7 @@ class Completions(SyncAPIResource):
         response_format: completion_create_params.ResponseFormat | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
         service_tier: Optional[Literal["auto", "default"]] | NotGiven = NOT_GIVEN,
+        skip_special_tokens: Optional[bool] | NotGiven = NOT_GIVEN,
         stop: Union[Optional[str], List[str]] | NotGiven = NOT_GIVEN,
         store: Optional[bool] | NotGiven = NOT_GIVEN,
         stream: Optional[Literal[False]] | Literal[True] | NotGiven = NOT_GIVEN,
@@ -880,6 +890,7 @@ class Completions(SyncAPIResource):
                     "response_format": response_format,
                     "seed": seed,
                     "service_tier": service_tier,
+                    "skip_special_tokens": skip_special_tokens,
                     "stop": stop,
                     "store": store,
                     "stream": stream,
@@ -946,6 +957,7 @@ class AsyncCompletions(AsyncAPIResource):
         response_format: completion_create_params.ResponseFormat | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
         service_tier: Optional[Literal["auto", "default"]] | NotGiven = NOT_GIVEN,
+        skip_special_tokens: Optional[bool] | NotGiven = NOT_GIVEN,
         stop: Union[Optional[str], List[str]] | NotGiven = NOT_GIVEN,
         store: Optional[bool] | NotGiven = NOT_GIVEN,
         stream: Optional[Literal[False]] | NotGiven = NOT_GIVEN,
@@ -1115,6 +1127,8 @@ class AsyncCompletions(AsyncAPIResource):
               When this parameter is set, the response body will include the `service_tier`
               utilized.
 
+          skip_special_tokens: If set, special tokens will be included in the output
+
           stop: Up to 4 sequences where the API will stop generating further tokens.
 
           store: Whether or not to store the output of this chat completion request for use in
@@ -1198,6 +1212,7 @@ class AsyncCompletions(AsyncAPIResource):
         response_format: completion_create_params.ResponseFormat | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
         service_tier: Optional[Literal["auto", "default"]] | NotGiven = NOT_GIVEN,
+        skip_special_tokens: Optional[bool] | NotGiven = NOT_GIVEN,
         stop: Union[Optional[str], List[str]] | NotGiven = NOT_GIVEN,
         store: Optional[bool] | NotGiven = NOT_GIVEN,
         stream_options: Optional[ChatCompletionStreamOptionsParam] | NotGiven = NOT_GIVEN,
@@ -1373,6 +1388,8 @@ class AsyncCompletions(AsyncAPIResource):
               When this parameter is set, the response body will include the `service_tier`
               utilized.
 
+          skip_special_tokens: If set, special tokens will be included in the output
+
           stop: Up to 4 sequences where the API will stop generating further tokens.
 
           store: Whether or not to store the output of this chat completion request for use in
@@ -1449,6 +1466,7 @@ class AsyncCompletions(AsyncAPIResource):
         response_format: completion_create_params.ResponseFormat | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
         service_tier: Optional[Literal["auto", "default"]] | NotGiven = NOT_GIVEN,
+        skip_special_tokens: Optional[bool] | NotGiven = NOT_GIVEN,
         stop: Union[Optional[str], List[str]] | NotGiven = NOT_GIVEN,
         store: Optional[bool] | NotGiven = NOT_GIVEN,
         stream_options: Optional[ChatCompletionStreamOptionsParam] | NotGiven = NOT_GIVEN,
@@ -1624,6 +1642,8 @@ class AsyncCompletions(AsyncAPIResource):
               When this parameter is set, the response body will include the `service_tier`
               utilized.
 
+          skip_special_tokens: If set, special tokens will be included in the output
+
           stop: Up to 4 sequences where the API will stop generating further tokens.
 
           store: Whether or not to store the output of this chat completion request for use in
@@ -1699,6 +1719,7 @@ class AsyncCompletions(AsyncAPIResource):
         response_format: completion_create_params.ResponseFormat | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
         service_tier: Optional[Literal["auto", "default"]] | NotGiven = NOT_GIVEN,
+        skip_special_tokens: Optional[bool] | NotGiven = NOT_GIVEN,
         stop: Union[Optional[str], List[str]] | NotGiven = NOT_GIVEN,
         store: Optional[bool] | NotGiven = NOT_GIVEN,
         stream: Optional[Literal[False]] | Literal[True] | NotGiven = NOT_GIVEN,
@@ -1741,6 +1762,7 @@ class AsyncCompletions(AsyncAPIResource):
                     "response_format": response_format,
                     "seed": seed,
                     "service_tier": service_tier,
+                    "skip_special_tokens": skip_special_tokens,
                     "stop": stop,
                     "store": store,
                     "stream": stream,
